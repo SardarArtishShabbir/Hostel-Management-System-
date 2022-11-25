@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Hostel_MS.Forms
 {
-    public partial class Main : Form
+    public partial class Login : Form
     {
-        public Main()
+        public Login()
         {
             InitializeComponent();
-        }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
