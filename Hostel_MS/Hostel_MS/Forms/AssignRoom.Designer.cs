@@ -51,7 +51,7 @@
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(203, 272);
+            this.button5.Location = new System.Drawing.Point(197, 272);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(82, 36);
             this.button5.TabIndex = 45;
@@ -168,7 +168,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(96)))), ((int)(((byte)(46)))));
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -203,6 +202,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "Assign_Room";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AssignRoom";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

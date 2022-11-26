@@ -30,22 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Room));
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_number = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_floor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmb_type = new System.Windows.Forms.ComboBox();
+            this.cmb_washroom = new System.Windows.Forms.ComboBox();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.txt_seatRent = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,15 +57,17 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Room";
             // 
-            // textBox1
+            // txt_number
             // 
-            this.textBox1.Location = new System.Drawing.Point(137, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
-            this.textBox1.TabIndex = 15;
+            this.txt_number.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_number.Location = new System.Drawing.Point(137, 104);
+            this.txt_number.Name = "txt_number";
+            this.txt_number.Size = new System.Drawing.Size(159, 20);
+            this.txt_number.TabIndex = 15;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 104);
@@ -96,15 +96,17 @@
             this.panel1.Size = new System.Drawing.Size(337, 79);
             this.panel1.TabIndex = 12;
             // 
-            // textBox2
+            // txt_floor
             // 
-            this.textBox2.Location = new System.Drawing.Point(137, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 20);
-            this.textBox2.TabIndex = 17;
+            this.txt_floor.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_floor.Location = new System.Drawing.Point(137, 141);
+            this.txt_floor.Name = "txt_floor";
+            this.txt_floor.Size = new System.Drawing.Size(159, 20);
+            this.txt_floor.TabIndex = 17;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 141);
@@ -115,6 +117,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 177);
@@ -125,6 +128,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(11, 213);
@@ -133,118 +137,104 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Attach Washroom :";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(136, 255);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(159, 20);
-            this.textBox5.TabIndex = 23;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 256);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 17);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Available seats :";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(136, 290);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(159, 20);
-            this.textBox6.TabIndex = 25;
-            // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 291);
+            this.label7.Location = new System.Drawing.Point(11, 261);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 17);
             this.label7.TabIndex = 24;
             this.label7.Text = "Per Seat Rent :";
             // 
-            // comboBox1
+            // cmb_type
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1 Bed ",
-            "2 Bed",
-            "3 Bed",
-            "4 Bed ",
-            "5 Bed",
-            "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(137, 177);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 26;
+            this.cmb_type.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmb_type.FormattingEnabled = true;
+            this.cmb_type.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmb_type.Location = new System.Drawing.Point(137, 177);
+            this.cmb_type.Name = "cmb_type";
+            this.cmb_type.Size = new System.Drawing.Size(159, 21);
+            this.cmb_type.TabIndex = 26;
             // 
-            // comboBox2
+            // cmb_washroom
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmb_washroom.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmb_washroom.FormattingEnabled = true;
+            this.cmb_washroom.Items.AddRange(new object[] {
             "Yes ",
             "No"});
-            this.comboBox2.Location = new System.Drawing.Point(136, 212);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(159, 21);
-            this.comboBox2.TabIndex = 27;
+            this.cmb_washroom.Location = new System.Drawing.Point(136, 212);
+            this.cmb_washroom.Name = "cmb_washroom";
+            this.cmb_washroom.Size = new System.Drawing.Size(159, 21);
+            this.cmb_washroom.TabIndex = 27;
             // 
-            // button5
+            // btn_clear
             // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(192, 346);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 36);
-            this.button5.TabIndex = 29;
-            this.button5.Text = "Clear";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_clear.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_clear.BackColor = System.Drawing.Color.White;
+            this.btn_clear.ForeColor = System.Drawing.Color.Black;
+            this.btn_clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_clear.Image")));
+            this.btn_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_clear.Location = new System.Drawing.Point(213, 320);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(82, 36);
+            this.btn_clear.TabIndex = 29;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_clear.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(72, 346);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 36);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Save";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_save.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_save.BackColor = System.Drawing.Color.White;
+            this.btn_save.ForeColor = System.Drawing.Color.Black;
+            this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
+            this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_save.Location = new System.Drawing.Point(93, 320);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(82, 36);
+            this.btn_save.TabIndex = 28;
+            this.btn_save.Text = "Save";
+            this.btn_save.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // txt_seatRent
+            // 
+            this.txt_seatRent.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_seatRent.Location = new System.Drawing.Point(136, 261);
+            this.txt_seatRent.Name = "txt_seatRent";
+            this.txt_seatRent.Size = new System.Drawing.Size(159, 20);
+            this.txt_seatRent.TabIndex = 30;
             // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 446);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txt_seatRent);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.cmb_washroom);
+            this.Controls.Add(this.cmb_type);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_floor);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_number);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "Room";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Room";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -256,21 +246,19 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_number;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_floor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmb_type;
+        private System.Windows.Forms.ComboBox cmb_washroom;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.TextBox txt_seatRent;
     }
 }

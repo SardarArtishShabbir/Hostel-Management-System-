@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hostel_MS.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace Hostel_MS.Forms
 {
     public partial class Visitor : Form
     {
+        SqlData SqlData = new SqlData();
         public Visitor()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlData.OpenCon();
+            SqlData.NonQueryExecute("insert query");
+            SqlData.CloseCon();
         }
     }
 }
