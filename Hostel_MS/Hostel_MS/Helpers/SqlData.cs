@@ -12,7 +12,7 @@ namespace Hostel_MS.Helpers
     public class SqlData
     {
        
-        public  String ConString = ConfigurationManager.ConnectionStrings["ConString"].ToString();
+        public static String ConString = ConfigurationManager.ConnectionStrings["ConString"].ToString();
          SqlConnection con = new SqlConnection(ConString);
 
         public  void OpenCon()

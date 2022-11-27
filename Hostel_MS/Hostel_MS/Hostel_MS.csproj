@@ -96,6 +96,8 @@
     <Compile Include="Forms\Visitor.Designer.cs">
       <DependentUpon>Visitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Mymessage.cs" />
+    <Compile Include="Helpers\SqlData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AssignRoom.resx">
